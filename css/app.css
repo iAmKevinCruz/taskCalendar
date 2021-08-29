@@ -30,6 +30,9 @@ header:hover{
 h1{
     color: var(--white);
 }
+#btnHideForm{
+    height: 30%;
+}
 
 /* BODY */
 body{
@@ -37,6 +40,13 @@ body{
     background-image: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+}
+.no-task{
+    border-radius: 3px;
+    padding: 4px;
+    opacity: .8;
+    justify-content: center;
+    align-items: center;
 }
 .container-fluid{
     display: flex;
@@ -72,6 +82,10 @@ body{
 }
 
 /* Tasks Display */
+.currentTask{
+    display: flex;
+    align-items: center;
+}
 .taskStar{
     color: var(--blue);
     margin-right: 3px;
@@ -85,6 +99,15 @@ body{
 .secondaryInfo{
     font-size: .8rem;
     color: 
+}
+.red{
+    color: red;
+}
+.left{
+    flex: 9;
+}
+.btnDone{
+    height: 45px;
 }
 
 /* FOOTER */

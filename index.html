@@ -11,39 +11,38 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <h1 class="display-1">myTasks</h1>
+    <header class="d-flex justify-content-between align-items-center">
+        <h1 class="display-5">myTasks</h1>
+        <div>
+            <button id="btnToggleForm" class="btn btn-secondary">HideForm</button>
+            <button id="btnClear" class="btn btn-danger me-3">Clear ALL</button>
+        </div>
+        
     </header>
 
     <!-- BODY -->
     <main class="container-fluid pt-3">
+        <!-- <div id="noTaskAlert">
+            <p class="display-6 text-secondary bg-light no-task text-center">Oops! Looks like you don't have any pending or completed tasks. <br><br>Use the form on the right to create new tasks.</p>
+        </div> -->
         <section id="sectionList" class="section-list me-3">
-            <h3>Your pending Task</h3>
-            <div class="pending-tasks">
-                <div class="currentTask mb-3 py-1 px-1">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                            <i class="fas fa-star taskStar"></i>
-                            <h6>Throw out the trash</h6>
-                        </div>
-                        <label class="dueDate">12/25/21</label>
-                    </div>
-                    <label>I need to throw out the trash before Tati gets home.</label>
-                    <hr class="divider">
-                    <div class="d-flex justify-content-between secondaryInfo">
-                        <label class="text-secondary">Priority: <span id="taskPriority">Low</span></label>
-                        <label class="text-secondary">Location: Oraldnon</label>
-                    </div>
-                </div>
+            <div id="pendingTasks" class="pending-tasks">
+                <h3>Pending Tasks</h3>
+                <!-- <div id="noPendingAlert">
+                    <p class="no-task bg-light text-center text-secondary">You don't have any pending tasks.</p>
+                </div> -->
             </div>
-            <h3>Completed Tasks</h3>
-            <div class="completed-tasks">
-                
+            
+            <div id="completedTasks" class="completed-tasks">
+                <h3>Completed Tasks</h3>
+                <!-- <div id="noCompletedAlert">
+                    <p class="no-task bg-light text-center text-secondary">You haven't completed any tasks.</p>
+                </div> -->
             </div>
 
         </section>
 
-        <section class="section-form shadow">
+        <section id="sectionForm" class="section-form shadow">
             <div class="form px-3 py-3">
                 <div class="mb-3">
                     <label for="titleInput" class="form-label">Title</label>
